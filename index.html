@@ -50,6 +50,12 @@
       #cheating-icon {
         padding-left: 100px;
       }
+      .highlight {
+        padding-top: 15px;
+        font-weight: 600;
+        color: rgb(63, 63, 63);
+      }
+      /* slider editing */ ;
     </style>
 
     <title>GOG.com</title>
@@ -184,7 +190,61 @@
         ></a>
       </ul>
     </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h3 class="highlight">
+            <ion-icon name="pencil-outline"></ion-icon>Highlights
+          </h3>
+          <hr />
+        </div>
+      </div>
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+        <li data-target="#demo" data-slide-to="4"></li>
+      </ul>
+      <!-- slides -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/gog-assets/carousel1.jpg" alt="0" />
+                <div class="carousel-caption">
+                  <h3>Los Angeles</h3>
+                  <p>We had such a great time in LA!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/gog-assets/carousel2.jpg" alt="1" />
+              </div>
+              <div class="carousel-item">
+                <img src="/gog-assets/carousel3.jpg" alt="2" />
+              </div>
+              <div class="carousel-item">
+                <img src="/gog-assets/carousel6.jpg" alt="3" />
+              </div>
+              <div class="carousel-item">
+                <img src="/gog-assets/carousel5.jpg" alt="4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
