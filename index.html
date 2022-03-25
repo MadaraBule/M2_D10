@@ -85,6 +85,9 @@
       .platform-for-card {
         padding-right: 40%;
       }
+      .no-discount {
+        padding-right: 65%;
+      }
       .price-for-card {
         font-weight: 600;
         font-size: 20px;
@@ -129,7 +132,13 @@
       }
       .please-wrap {
           padding: 10px;
-          
+      }
+      .first-four {
+          padding: 10px;
+          display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
       }
       .big-card-feature {
         padding: 2px;
@@ -147,6 +156,21 @@
         border-bottom: rgb(115, 24, 175);
         border-bottom: 3x solid;
       }
+      
+.row-pp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column-pp {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
     </style>
 
     <title>GOG.com</title>
@@ -435,7 +459,7 @@
               <p class="card-text">Soulsaga</p>
               <p>
                 <ion-icon
-                  class="platform-for-card"
+                  class="no-discount"
                   name="logo-windows"
                 ></ion-icon
                 ><span class="price-for-card">$39.99</span>
@@ -552,10 +576,12 @@
                   </div>
               </div>
         </div>
+        <div>
+            <div class="row-pp">
         <div class="col-lg-3 md-12 sm-12">
             <div class="card">
                 <img src="/gog-assets/tile (18).jpg" class="card-img-top" alt="...">
-                <div class="card-body please-wrap">
+                <div class="card-body first-four">
                     <p class="card-text">Rollercoaster</p>
                     <p>
                       <ion-icon
@@ -567,10 +593,12 @@
                   </div>
               </div>
         </div>
+    </div>
+</div>
         <div class="col-lg-3 md-12 sm-12">
             <div class="card">
                 <img src="/gog-assets/tile (26).jpg" class="card-img-top" alt="...">
-                <div class="card-body please-wrap">
+                <div class="card-body first-four">
                     <p class="card-text">Rollercoaster</p>
                     <p>
                       <ion-icon
@@ -585,7 +613,7 @@
         <div class="col-lg-3 md-12 sm-12">
             <div class="card">
                 <img src="/gog-assets/tile (28).jpg" class="card-img-top" alt="...">
-                <div class="card-body please-wrap">
+                <div class="card-body  first-four">
                     <p class="card-text">Rollercoaster</p>
                     <p>
                       <ion-icon
@@ -600,7 +628,7 @@
           <div class="col-lg-3 md-12 sm-12">
             <div class="card">
                 <img src="/gog-assets/tile (26).jpg" class="card-img-top" alt="...">
-                <div class="card-body please-wrap">
+                <div class="card-body  first-four">
                     <p class="card-text">Rollercoaster</p>
                     <p>
                       <ion-icon
@@ -612,6 +640,7 @@
                   </div>
               </div>
           </div>
+        </div>
           <div class="col-lg-3 md-12 sm-12">
             <div class="card">
                 <img src="/gog-assets/tile (30).jpg" class="card-img-top" alt="...">
@@ -934,6 +963,16 @@
     </div>
       </div>
     </div>
+    <div class="container justify-content-center">
+        <ul class="list-inline">
+          <h3 class="list-inline-item highlight"><ion-icon name="pie-chart-outline"></ion-icon> Discover Games</h3>
+          <li class="list-inline-item plz-click">Games for you</li>
+          <li class="list-inline-item plz-click">Bestselling</li>
+          <li class="list-inline-item plz-click">New</li>
+          <li class="list-inline-item plz-click">Upcoming</li>
+        </ul>
+        <hr>
+        </div>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
