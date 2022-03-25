@@ -15,15 +15,184 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
+    <style>
+      /* body styling */
+      body {
+        background-color: rgb(228, 228, 228);
+      }
+      /* nav bar styling  */
+      .logo-img {
+        border-radius: 10%;
+      }
+      #navigation {
+        background-color: rgb(49, 49, 49);
+      }
+      .items-drop {
+        margin: 0%;
+        padding: 0%;
+        padding-right: 2px;
+      }
+      .drop-text {
+        color: rgb(189, 189, 189);
+        font-weight: 600;
+      }
+      .pfp {
+        max-width: 20px;
+        border-radius: 70%;
+      }
+      .nav-icons {
+        color: rgb(189, 189, 189);
+        font-weight: 600;
+        font-size: 20px;
+        padding: 0%;
+        padding-left: 20px;
+      }
+      #cheating-icon {
+        padding-left: 100px;
+      }
+    </style>
 
-    <title>Hello, world!</title>
+    <title>GOG.com</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav id="navigation" class="navbar justify-content-center navbar-dark">
+      <a class="navbar-brand" href="#">
+        <img
+          class="logo-img"
+          src="/gog-assets/logo.png"
+          width="30"
+          height="30"
+          alt=""
+        />
+      </a>
+      <ul class="nav-item dropdown items-drop">
+        <a
+          class="nav-link dropdown-toggle drop-text"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+          STORE
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">New Release</a>
+          <a class="dropdown-item" href="#">Bestsellers</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">On Sale Now</a>
+        </div>
+      </ul>
+      <ul class="nav-item dropdown items-drop">
+        <a
+          class="nav-link dropdown-toggle drop-text"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+          ABOUT
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">GOG.com</a>
+          <a class="dropdown-item" href="#">GOG Galaxy</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Join the Team</a>
+        </div>
+      </ul>
+      <ul class="nav-item dropdown items-drop">
+        <a
+          class="nav-link dropdown-toggle drop-text"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+          COMMUNITY
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">All Forums</a>
+          <a class="dropdown-item" href="#">General Discussion Forums</a>
+          <a class="dropdown-item" href="#">Forum Replies</a>
+          <a class="dropdown-item" href="#">Comunity Whishlist</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Facebook</a>
+          <a class="dropdown-item" href="#">Twitter</a>
+          <a class="dropdown-item" href="#">Twitch</a>
+        </div>
+      </ul>
+      <ul class="nav-item dropdown items-drop">
+        <a
+          class="nav-link dropdown-toggle drop-text"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+          SUPPORT
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Game Technical issues</a>
+          <a class="dropdown-item" href="#">Orders and Payments</a>
+          <a class="dropdown-item" href="#">Account and Website</a>
+          <a class="dropdown-item" href="#">Downloadse</a>
+          <a class="dropdown-item" href="#">GOG Galaxy</a>
+        </div>
+      </ul>
+      <ul class="nav-item dropdown items-drop">
+        <a
+          class="nav-link dropdown-toggle drop-text"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <span
+            ><img class="pfp" src="/gog-assets/profile-icon.jpg" alt=""
+          /></span>
+          ZIBALEAH
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="#">Game list</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Settings</a>
+        </div>
+      </ul>
+      <ul id="cheating-icon" class="nav-item items-drop">
+        <a class="nav-link nav-icons" href="#">
+          <ion-icon name="notifications-outline"></ion-icon
+        ></a>
+      </ul>
+      <ul class="nav-item items-drop">
+        <a class="nav-link nav-icons" href="#">
+          <ion-icon name="people-outline"></ion-icon
+        ></a>
+      </ul>
+      <ul class="nav-item items-drop">
+        <a class="nav-link nav-icons" href="#">
+          <ion-icon name="cart-outline"></ion-icon
+        ></a>
+      </ul>
+      <ul class="nav-item items-drop">
+        <a class="nav-link nav-icons" href="#">
+          <ion-icon name="search-outline"></ion-icon
+        ></a>
+      </ul>
+    </nav>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -34,12 +203,5 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
