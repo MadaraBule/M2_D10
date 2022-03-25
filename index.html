@@ -83,11 +83,28 @@
         margin-top: 40px;
       }
       .platform-for-card {
-        padding-right: 60%;
+        padding-right: 40%;
       }
       .price-for-card {
         font-weight: 600;
         font-size: 20px;
+      }
+      .discount {
+          background-color: blueviolet;
+          font-weight: 700;
+          font-size: 15px;
+          color: white;
+          padding-top: 7px;
+          padding-bottom: 7px;
+          padding-left: 12px;
+          padding-right: 12px;
+          border-radius: 0%;
+      }
+      .old-price {
+          color: rgb(146, 146, 146);
+          position: relative;
+          bottom: 65px;
+          left: 180px;
       }
       /* next part */
       .text-info-line {
@@ -111,7 +128,7 @@
         border-color: rgb(189, 187, 187);
       }
       .please-wrap {
-          padding: 2px;
+          padding: 10px;
           
       }
       .big-card-feature {
@@ -440,7 +457,7 @@
                   class="platform-for-card"
                   name="logo-windows"
                 ></ion-icon
-                ><span class="price-for-card">$39.99</span>
+                ><a href="#" class="badge discount">73%</a><span class="price-for-card">$39.99</span>
               </p>
             </div>
           </div>
@@ -459,7 +476,7 @@
                   class="platform-for-card"
                   name="logo-windows"
                 ></ion-icon
-                ><span class="price-for-card">$39.99</span>
+                ><a href="#" class="badge discount">73%</a><span class="price-for-card">$39.99</span>
               </p>
             </div>
           </div>
@@ -478,7 +495,7 @@
                   class="platform-for-card"
                   name="logo-windows"
                 ></ion-icon
-                ><span class="price-for-card">$39.99</span>
+                ><a href="#" class="badge discount">73%</a><span class="price-for-card">$39.99</span>
               </p>
             </div>
           </div>
@@ -802,8 +819,7 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-6">
-        <div class="col">
+        <div class="col-lg-3">
             <div class="card">
                 <img src="/gog-assets/tile (16).jpg" alt="">
                 <div class="card-body please-wrap">
@@ -818,7 +834,8 @@
                   </div>
             </div>
           </div>
-          <div class="col">
+      </div>
+        <div class="col-lg-3">
             <div class="card">
                 <img src="/gog-assets/tile (16).jpg" alt="">
                 <div class="card-body please-wrap">
